@@ -2,15 +2,15 @@
 Contributors: geekontheroad
 Donate link: https://geekontheroad.com/donate
 Author URI: https://geekontheroad.com
-Tags: gravityforms, order-summary, Summary, Preview, Gravity, form, GravitySummary, live-summary, gravity-summary, gravity summary, gravity forms, order-summary, Order Summary
+Tags: gravityforms, order-summary, live-summary, gravity-summary, gravity-forms
 Requires at least: 4.7
-Tested up to: 6.5
-Stable tag: 1.2.8
+Tested up to: 6.7
+Stable tag: 1.2.9
 Requires PHP: 7.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-This simple and handy plugin will add a live summary next to any gravity form. No coding required. Simply check the fields you want to see and save your form. 
+This simple and handy plugin will add a live summary next to any gravity form. No coding required. 
 
 == Description ==
 
@@ -63,6 +63,7 @@ This simple and handy plugin will add a live summary next to any gravity form. N
 
 Currently available PRO features are:
 
+* NEW: Added support for the new Image choices and Multi Select fields.
 * NEW: Added new setting for choice fields (radio, select, checkboxes) which allows you to display the choice label instead of its value
 * NEW: Added support for hidden fields
 * NEW: Added support for Section fields. 
@@ -141,6 +142,10 @@ Yes, send me a message and tell me what you would like and I will do my best to 
 
 
 == Changelog ==
+= 1.2.9 = 
+* Fix tags and short description notice
+* Fix minimum WP version notice
+
 = 1.2.8 = 
 * Dev: Fixed PHP notice.
 
