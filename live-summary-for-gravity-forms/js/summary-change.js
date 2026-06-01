@@ -276,7 +276,9 @@ jQuery(document).on('gform_post_render', function(event, form_id, current_page) 
  */
 function gotrgf_format_to_money(text) {
     //new instance of currency
-    var gotrgf_currency = new Currency(gf_global.gf_currency_config);
+    //resolve currency constructor: gform.Currency since GF 2.9, fall back to legacy global
+    var GotrgfCurrencyCtor = (typeof gform !== "undefined" && gform.Currency) ? gform.Currency : Currency;
+    var gotrgf_currency = new GotrgfCurrencyCtor(gf_global.gf_currency_config);
 
     //get some currency details from the above Currency instance
     var currency_name = gotrgf_currency['currency']['name'];

@@ -3,7 +3,7 @@
 Plugin Name: Live Summary for Gravity Forms
 Plugin URI: https://geekontheroad.com/gravity-forms-live-summary
 Description: This free plugin helps you to easily add a live summary sidebar next to any gravity forms.  
-Version: 1.2.9
+Version: 1.2.10
 Author: Geek on the Road
 Author URI: https://geekontheroad.com
 Text Domain: live-summary-for-gravity-forms
@@ -29,7 +29,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
 
 
-define( 'GF_SUMMARY_ADDON_VERSION', '1.2.9' );
+define( 'GF_SUMMARY_ADDON_VERSION', '1.2.10' );
 define('GOTRGF_PLUGIN_DIR', plugin_dir_url(__FILE__));
 define('GOTRGF_PLUGIN_PATH', plugin_dir_path(__FILE__));
 

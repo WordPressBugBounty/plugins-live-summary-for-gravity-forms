@@ -374,7 +374,9 @@ class summary_fields_value {
 			}
 
 			//new currency instance
-			var gotrgf_currency = new Currency(gf_global.gf_currency_config);
+			//resolve currency constructor: gform.Currency since GF 2.9, fall back to legacy global
+			var GotrgfCurrencyCtor = (typeof gform !== "undefined" && gform.Currency) ? gform.Currency : Currency;
+			var gotrgf_currency = new GotrgfCurrencyCtor(gf_global.gf_currency_config);
 			//format the number according to the currency rules
 			//this one does not use the gotrgf_format_to_money because it seems to always have the right format already except for the currency
 			var entered_price_formatted_currency = gotrgf_currency.toMoney(current_value);
